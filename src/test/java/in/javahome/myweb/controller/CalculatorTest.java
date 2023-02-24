@@ -30,11 +30,13 @@ public class CalculatorTest extends TestCase {
 			// save properties to project root folder
 			prop.store(output, null);
 
-		}catch(
+		}
+		catch(
 		IOException io)
 		{
 			io.printStackTrace();
-		}finally
+		}
+		finally
 		{
 			if (output != null) {
 				try {
