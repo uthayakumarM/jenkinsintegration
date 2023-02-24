@@ -3,6 +3,8 @@ node {
     git 'https://github.com/uthayakumarM/jenkinsintegration'
   }
   stage('compile package') {
-    sh 'mvn package'
+     def mvnHome = tool name: 'Maven', type: 'maven'
+     sh "${mvnHome}/bin/mvn package"
   }
+  
 }
